@@ -11,6 +11,7 @@ restaurantDescription.textContent = "the restaurant at the end of the universe";
 
 const banner = document.createElement("div");
 banner.classList.add("banner");
+banner.classList.add("image-two");
 banner.appendChild(restaurantName);
 banner.appendChild(restaurantDescription);
 
