@@ -99,7 +99,7 @@ button:before {
 }
 
 .banner {
-  width: 98%;
+  width: 95%;
   background-color: black;
 
   box-sizing: border-box;
@@ -131,7 +131,7 @@ button:before {
   pointer-events: none;
 }
 
-.restaurant-name {
+.title {
   font-size: 12rem;
   color: #00d9ff10;
   text-shadow: 0 0 0.05rem #fff, 0 0 0.25rem #0047478f, 0 0 0.5rem #fff,
@@ -186,7 +186,7 @@ button:before {
 }
 
 .menu-items {
-  width: 98%;
+  width: 95%;
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(3, 1fr);

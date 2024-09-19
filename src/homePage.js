@@ -1,27 +1,29 @@
-// content.js
-export const content = document.querySelector("#content");
+export function addHomePageToDOM() {
+  const content = document.querySelector("#content");
 
-const restaurantName = document.createElement("div");
-restaurantName.classList.add("restaurant-name");
-restaurantName.textContent = "Milliways";
+  const title = document.createElement("div");
+  title.classList.add("title");
+  title.textContent = "Milliways";
 
-const restaurantDescription = document.createElement("div");
-restaurantDescription.classList.add("restaurant-description");
-restaurantDescription.textContent = "the restaurant at the end of the universe";
+  const restaurantDescription = document.createElement("div");
+  restaurantDescription.classList.add("restaurant-description");
+  restaurantDescription.textContent = "the restaurant at the end of the universe";
 
-const banner = document.createElement("div");
-banner.classList.add("banner");
-banner.classList.add("image-two");
-banner.appendChild(restaurantName);
-banner.appendChild(restaurantDescription);
+  const banner = document.createElement("div");
+  banner.classList.add("banner");
+  banner.classList.add("image-two");
+  banner.appendChild(title);
+  banner.appendChild(restaurantDescription);
 
-const slogan = document.createElement("div");
-slogan.classList.add("slogan");
-slogan.textContent =
-  "If you've done six impossible things this morning, why not round it off with breakfast at Milliways, the restaurant at the end of the universe?";
+  const slogan = document.createElement("div");
+  slogan.classList.add("slogan");
+  slogan.textContent =
+    "If you've done six impossible things this morning, why not round it off with breakfast at Milliways, the restaurant at the end of the universe?";
 
-content.appendChild(banner);
-content.appendChild(slogan);
+  content.appendChild(banner);
+  content.appendChild(slogan);
+}
+
 
 /* <div class="banner">
 <div class="restaurant-name">
