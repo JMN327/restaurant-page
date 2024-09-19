@@ -2,7 +2,8 @@
 :root {
   margin: 0;
   padding: 0;
-  font-family: "Tilt Neon", sans-serif;
+  /* font-family: "Tilt Neon", sans-serif; */
+  font-family: "Megrim", system-ui;
   --neon: hsl(180, 100%, 50%);
   box-sizing: border-box;
 }
@@ -12,7 +13,7 @@ body {
   min-width: 1000px;
   margin: 0;
   padding: 0;
-  background-color: hsl(30, 100%, 97%);
+  background-color: hsl(25, 80%, 97%);
 }
 
 nav {
@@ -46,6 +47,7 @@ button {
   justify-content: center;
   align-items: center;
   position: relative;
+  letter-spacing: .3rem;
 
   /* border: 2px solid black; */
 }
@@ -79,7 +81,7 @@ button:before {
 #content {
   /* height: 80%; */
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
   justify-items: center;
   /* align-items: center; */
 }
@@ -98,12 +100,12 @@ button:before {
   position: relative;
 
   display: grid;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 1fr 2fr;
   justify-content: center;
   align-items: start;
   justify-items: center;
 
-  /* box-shadow: 0px 6px 8px 6px rgba(94, 56, 6, 0.521); */
+  box-shadow: 0px 4px 10px 6px  rgba(168, 144, 107, 0.575);
 }
 
 .banner:before {
@@ -126,28 +128,35 @@ button:before {
   font-size:12rem;
   color: #00d9ff10;
   text-shadow:
-    0 0 .1rem #fff,
-    0 0 .5rem #0086868f,
-    0 0 1rem #fff,
+    0 0 .05rem #fff,
+    0 0 .25rem #0047478f,
+    0 0 .5rem #fff,
+    0 0 1rem var(--neon),
     0 0 2rem var(--neon),
+    0 0 2.1rem var(--neon),
     0 0 4rem var(--neon),
-    0 0 4.2rem var(--neon),
-    0 0 8rem var(--neon),
-    0 0 12rem var(--neon);
+    0 0 6rem var(--neon);
+    
+    letter-spacing: .3rem;
+    padding-top: 24px;
 }
 
 .restaurant-description {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   color: #00d9ff10;
   text-shadow:
-  0 0 .1rem #fff,
-  0 0 .5rem #000000,
-  0 0 1rem #fff,
+  0 0 .025rem #fff,
+  0 0 .125rem #000000,
+  0 0 .25rem #fff,
+  0 0 .5rem var(--neon),
+  0 0 1rem var(--neon),
+  0 0 1.1rem var(--neon),
   0 0 2rem var(--neon),
-  0 0 4rem var(--neon),
-  0 0 4.2rem var(--neon),
-  0 0 8rem var(--neon),
-  0 0 12rem var(--neon);
+  0 0 3rem var(--neon);
+  letter-spacing: .3rem;
+  text-align: center;
+  padding: 24px 36px;
 
 }
 
@@ -163,6 +172,21 @@ button:before {
   box-shadow: 0px 4px 10px 6px  rgba(168, 144, 107, 0.329);
   border-radius: 12px;
   background-color: white;
-  padding: 24px 36px;
+  padding: 30px 36px;
   letter-spacing: .3rem;
+  border: none;
+  position: relative;
+}
+
+.slogan:before {
+  border: 3px solid hsl(180, 60%, 50%);
+  border-radius: 6px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  pointer-events: none;
 }
