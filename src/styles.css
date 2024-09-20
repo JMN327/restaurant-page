@@ -85,6 +85,9 @@ button:before {
 
 .image-one {
   background-image: url("media/1.jpg");
+  height: 275px;
+  background-position:0% 33%;
+  background-size: 100%;
 }
 .image-two {
   background-image: url("media/2.jpg");
@@ -261,7 +264,7 @@ button:before {
   font-weight: 700;
   color: transparent;
   text-shadow: 0 0 0.05rem #fff, 0 0 0.25rem #0047478f, 0 0 0.5rem #fff,
-    0 0 1rem var(--neon), 0 0 2rem var(--neon);
+    0 0 1rem var(--neon), 0 0 2rem var(--neon), 0 0 2.5rem var(--neon);
   letter-spacing: 0.3rem;
   line-height: 1.8;
   /* padding: 0px 36px; */
