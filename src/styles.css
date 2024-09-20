@@ -5,6 +5,8 @@
   /* font-family: "Tilt Neon", sans-serif; */
   font-family: "Megrim", system-ui;
   --neon: hsl(180, 100%, 50%);
+  --soft-edge: 0px 4px 12px 12px hsla(236, 34%, 62%, 0.233),
+    0px 4px 6px 4px rgba(255, 244, 182, 0.233);
   box-sizing: border-box;
 }
 
@@ -13,7 +15,7 @@ body {
   min-width: 1000px;
   margin: 0;
   padding: 0;
-  background-color: hsl(25, 80%, 97%);
+  background-color: hsl(236, 27%, 14%);
 }
 
 nav {
@@ -34,23 +36,22 @@ button {
   font-size: 1.7rem;
   border-radius: 8px;
   /* background-color: rgb(28, 49, 88); */
-  background-color: white;
-  color: hsl(180, 60%, 50%);
+  background-color: hsl(236, 30%, 15%);
+  color: transparent;
   /* border: 4px solid rgb(255, 153, 0); */
   font-weight: 700;
-  box-shadow: 0px 4px 10px 6px rgba(168, 144, 107, 0.329);
+  box-shadow: var(--soft-edge);
   transition: all 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   letter-spacing: 0.3rem;
-
-  /* border: 2px solid black; */
+  text-shadow: 0 0 0.05rem #fff, 0 0 0.25rem #0047478f, 0 0 0.5rem #fff,
+    0 0 1rem var(--neon), 0 0 2rem var(--neon);
 }
 
 button:hover {
-  color: hsl(180, 90%, 80%);
   height: 5rem;
   font-size: 2.2rem;
   letter-spacing: 0.6rem;
@@ -93,7 +94,7 @@ button:before {
 }
 .image-three {
   background-image: url("media/3.jpg");
-  height: 260px;
+  height: 275px;
   background-position: 40% 0%;
   background-size: 120%;
 }
@@ -114,7 +115,7 @@ button:before {
   align-items: start;
   justify-items: center;
 
-  box-shadow: 0px 4px 10px 6px rgba(168, 144, 107, 0.575);
+  box-shadow: var(--soft-edge);
 }
 
 .banner:before {
@@ -161,15 +162,18 @@ button:before {
   font-weight: 700;
   width: 80%;
   text-align: center;
-  color: hsl(180, 90%, 40%);
-  box-shadow: 0px 4px 10px 6px rgba(168, 144, 107, 0.329);
+  color: transparent;
+  box-shadow: var(--soft-edge);
   border-radius: 12px;
-  background-color: white;
+  background-color: hsl(236, 30%, 15%);
   padding: 30px 36px;
   letter-spacing: 0.3rem;
   line-height: 1.4;
   border: none;
   position: relative;
+
+  text-shadow: 0 0 0.05rem #fff, 0 0 0.25rem #0047478f, 0 0 0.5rem #fff,
+    0 0 1rem var(--neon), 0 0 2rem var(--neon);
 }
 
 .slogan:before {
@@ -197,10 +201,10 @@ button:before {
   font-family: inherit;
   font-size: 1.7rem;
   border-radius: 8px;
-  background-color: white;
-  color: hsl(180, 60%, 50%);
+  background-color: hsl(236, 30%, 15%);
+  color: transparent;
   font-weight: 700;
-  box-shadow: 0px 4px 10px 6px rgba(168, 144, 107, 0.329);
+  box-shadow: var(--soft-edge);
   transition: all 0.3s;
   display: flex;
   flex-basis: auto;
@@ -209,6 +213,9 @@ button:before {
   position: relative;
   letter-spacing: 0.3rem;
   padding: 18px;
+
+  text-shadow: 0 0 0.05rem #fff, 0 0 0.25rem #0047478f, 0 0 0.5rem #fff,
+    0 0 1rem var(--neon), 0 0 2rem var(--neon);
 }
 
 .item-name:before {
@@ -229,32 +236,32 @@ button:before {
 .item {
   box-sizing: border-box;
   display: flex;
-  gap: 24px;
+  gap: 32px;
   justify-content: center;
   align-items: start;
 
-  background-color: hsl(212, 77%, 12%);
+  background-color: hsl(194, 38%, 26%);
   border: 4px solid black;
   border-radius: 24px;
 
-  padding: 18px;
+  padding: 28px;
+
+  box-shadow: var(--soft-edge);
 
   img {
     width: 180px;
     height: 180px;
     border-radius: 24px;
-    border: 3px solid white;
     box-shadow: 0 0 0.025rem #fff, 0 0 0.125rem #000000, 0 0 0.25rem #fff,
-      0 0 0.5rem var(--neon), 0 0 1rem var(--neon), 0 0 1.1rem var(--neon);
+      0 0 0.5rem var(--neon), 0 0 1rem var(--neon), 0 0 1.5rem var(--neon);
   }
 }
 .item-blurb {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #00d9ff10;
-  text-shadow: 0 0 0.025rem #fff, 0 0 0.125rem #000000, 0 0 0.25rem #fff,
-    0 0 0.5rem var(--neon), 0 0 1rem var(--neon), 0 0 1.1rem var(--neon),
-    0 0 2rem var(--neon), 0 0 3rem var(--neon);
+  color: transparent;
+  text-shadow: 0 0 0.05rem #fff, 0 0 0.25rem #0047478f, 0 0 0.5rem #fff,
+    0 0 1rem var(--neon), 0 0 2rem var(--neon);
   letter-spacing: 0.3rem;
   line-height: 1.8;
   /* padding: 0px 36px; */
